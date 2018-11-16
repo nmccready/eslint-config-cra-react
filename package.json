@@ -1,6 +1,6 @@
 {
   "name": "@znemz/eslint-config-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "eslint react config, following our style guide",
   "main": "index.js",
   "license": "MIT",
@@ -8,8 +8,7 @@
     "prelint": "editorconfig-tools check * tests/*",
     "lint": "eslint .",
     "tests-only": "babel-tape-runner ./tests/**/*spec.js",
-    "prepublish":
-      "(in-install || eslint-find-rules --unused) && (not-in-publish || yarn test)",
+    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || yarn test)",
     "pretest": "yarn lint",
     "test": "yarn tests-only"
   },
@@ -26,7 +25,9 @@
     "styleguide"
   ],
   "author": "Nicholas McCready",
-  "originlAuthors": ["AirBNB"],
+  "originlAuthors": [
+    "AirBNB"
+  ],
   "dependencies": {
     "@znemz/eslint-plugin-nem": "0.0.1",
     "eslint-config-airbnb": "~16.1.0",
@@ -54,5 +55,7 @@
   "engines": {
     "node": ">= 4"
   },
-  "files": ["index.js"]
+  "files": [
+    "index.js"
+  ]
 }
