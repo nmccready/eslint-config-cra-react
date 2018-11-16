@@ -9,7 +9,7 @@ module.exports = {
     }
   },
   extends: ['eslint-config-airbnb'],
-  plugins: ['prettier', '@znemz/eslint-plugin-nem'],
+  plugins: ['prettier', '@znemz/nem'],
   rules: {
     // we should not disable this one basically don't
     // `export const someFunc` and `export default someFunc` in the same file
