@@ -8,7 +8,7 @@ module.exports = {
       experimentalObjectRestSpread: true
     }
   },
-  extends: ['eslint-config-airbnb'],
+  extends: ['eslint-config-airbnb', 'prettier'],
   plugins: ['prettier', '@znemz/nem'],
   rules: {
     // we should not disable this one basically don't
@@ -49,6 +49,8 @@ module.exports = {
       }
     ],
     curly: 0,
+    // https://github.com/petkaantonov/bluebird/wiki/Optimization-killers#all-this-is-wrong-in-turbofan-node-8
+    'no-param-reassign': 0, // TODO ['error', { props: false }],
     'arrow-body-style': ['error', 'as-needed'],
     'react/forbid-prop-types': 0,
     'class-methods-use-this': 0,

@@ -30,6 +30,7 @@
   "dependencies": {
     "@znemz/eslint-plugin-nem": "0.0.1",
     "eslint-config-airbnb": "~16.1.0",
+    "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-prettier": "^2.6.0"
   },
   "devDependencies": {
